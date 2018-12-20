@@ -3,9 +3,9 @@ package org.fasttrackit;
 import java.sql.SQLOutput;
 
 public class Vehicle {
-    String name;
-    String color;
-    double mileage;
+    private String name;
+    private String color;
+    private double mileage;
 
     public double accelerate(double speed, double durationInHours)
     {
@@ -16,5 +16,29 @@ public class Vehicle {
         System.out.println("Traveled distance: " + traveledDistance + " km ");
 
         return traveledDistance;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name.trim();
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
     }
 }

@@ -13,10 +13,10 @@ public class App
         engine.capacity = 1500;
 
         Car car = new Car(engine);
-        car.name = "Dacia";
-        car.color = "white";
+        car.setName("Dacia");
+        car.setColor("white");
         car.doorCount = 4;
-        car.mileage = 7.5;
+        car.setMileage(7.5);
         car.running = true;
 
         double carTraveldDistance = car.accelerate(100, 2);
@@ -29,7 +29,8 @@ public class App
         engine = null;
 
         Car car2 = new Car(new Engine());
-        car2.name = "sfa";
+        car2.setName("sfa");
+
 
     }
 }
