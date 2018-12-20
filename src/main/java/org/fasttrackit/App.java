@@ -16,6 +16,9 @@ public class App
         car.mileage = 7.5;
         car.running = true;
 
+        double carTraveldDistance = car.accelerate(100, 2);
+
+
         Engine engine = new Engine();
         engine.manufacturer = "Renault";
         engine.capacity = 1500;
