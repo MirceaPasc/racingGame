@@ -55,5 +55,14 @@ public class App
 
         new UFO().accelerate(130,0.8);
 
+        // polymorphism (an object can take multiple forms)
+        Vehicle ufo = new UFO();
+        // The type of variables does NOT determine the object's behavior
+        ufo.accelerate(200,2);
+
+        // The type of the variable determins what methods can be invoked
+        // we might need type casting (se below)
+        ((UFO) ufo).concealCheating();
+
     }
 }
