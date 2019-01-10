@@ -20,4 +20,10 @@ public class UFO extends Vehicle{
         System.out.println("I'm not cheating!");
     }
 
+    // example of co-variant return type
+    // exaxmple of extanding access priveleges in overridden method
+    @Override
+    public UFO clone() {
+        return new UFO();
+    }
 }

@@ -12,9 +12,7 @@ public class Vehicle {
         vehicleCount++;
     }
 
-    public double accelerate(double speed, double durationInHours)
-
-    {
+    public double accelerate(double speed, double durationInHours) {
         System.out.println(name + " accelerated with " + speed + " km/h for " + durationInHours + " hours ");
 
         double traveledDistance = speed * durationInHours;
@@ -24,6 +22,12 @@ public class Vehicle {
         return traveledDistance;
     }
 
+    protected Vehicle clone() {
+
+    Vehicle vehicle = new Vehicle();
+    // copy properties from current object or simply call this.clone();
+        return vehicle;
+    }
 
     public String getName() {
         return name;
