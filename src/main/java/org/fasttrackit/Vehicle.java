@@ -1,7 +1,5 @@
 package org.fasttrackit;
 
-import java.sql.SQLOutput;
-
 public class Vehicle {
 
     public static int vehicleCount;
@@ -15,6 +13,7 @@ public class Vehicle {
     }
 
     public double accelerate(double speed, double durationInHours)
+
     {
         System.out.println(name + " accelerated with " + speed + " km/h for " + durationInHours + " hours ");
 
@@ -24,6 +23,7 @@ public class Vehicle {
 
         return traveledDistance;
     }
+
 
     public String getName() {
         return name;
@@ -47,5 +47,14 @@ public class Vehicle {
 
     public void setMileage(double mileage) {
         this.mileage = mileage;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", mileage=" + mileage +
+                '}';
     }
 }
