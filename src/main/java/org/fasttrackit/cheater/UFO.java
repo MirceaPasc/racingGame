@@ -21,7 +21,7 @@ public class UFO extends Vehicle{
     }
 
     // example of co-variant return type
-    // exaxmple of extanding access priveleges in overridden method
+    // exaxmple of extanding access priveleges in overriding method
     @Override
     public UFO clone() {
         return new UFO();
