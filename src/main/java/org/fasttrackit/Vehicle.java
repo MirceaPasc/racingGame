@@ -34,6 +34,10 @@ public class Vehicle {
         return traveledDistance;
     }
 
+    public double accelerate (double speed) {
+        return accelerate(speed, 1);
+    }
+
     protected Vehicle clone() {
 
     Vehicle vehicle = new Vehicle();
